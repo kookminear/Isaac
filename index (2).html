@@ -141,17 +141,17 @@ textarea#n{background:transparent;color:#000;height:70%;padding:6px 0}
 <script>
 var home=[
  ["notes","Catatan","📝","#ffd60a"],["calc","Kalkulator","🧮","#ff9f0a"],["clock","Jam","⏰","#1c1c1e"],["photo","Foto","🌅","#f2f2f7"],
- ["weather","Cuaca","⛅","#3a86ff"],["maps","Peta","🗺️","#34c759"],["music","Musik","🎵","#ff375f"],["set","Pengaturan","⚙️","#8e8e93"],["ig","Instagram","📸","linear-gradient(45deg,#feda75,#d62976,#4f5bd5)"]];
+ ["weather","Cuaca","⛅","#3a86ff"],["maps","Peta","🗺️","#34c759"],["music","Musik","🎵","#ff375f"],["setting","Pengaturan","⚙️","#8e8e93"],["Instagram","Instagram","📸","linear-gradient(45deg,#feda75,#d62976,#4f5bd5)"]];
 /* ISI CHAT
    n = nama, g = true untuk grup, p = foto, w = jam di daftar chat
    m = pesan awal: [pengirim, teks]  (pengirim = "me" untuk kamu, atau nama orangnya)
    t = giliran balasan. Tiap giliran punya pilihan o: [teks yang dikirim, [[pengirim, balasan], ...]]
    cl = naskah telepon: [detik, "them" atau "me", teks] */
 var chats=[
- {n:"Mama",p:"foto/mama.jpg",c:"#ff9f0a",w:"09:12",
-  m:[["Mama","Udah makan belum?"]],
-  t:[{o:[["Udah, Ma",[["Mama","Bagus. Jangan lupa istirahat ya"]]],["Belum, nanti",[["Mama","Jangan telat makan ya 🙏"],["Mama","Nanti sakit lho"]]]]},
-     {o:[["Iya, Ma",[["Mama","Sayang kamu ❤️"]]],["Hehe oke",[["Mama","Hati-hati di jalan"]]]]}],
+ {n:"Adora(abel)",p:"foto/Adora(abel).jpg",c:"#ff9f0a",w:"09:12",
+  m:[["Adora(abel)","Sa, papi nyariin kamu"]],
+  t:[{o:[["Aku lagi latihan boxing",[["Adora(abel)","Okedeh, semangat latihannya sayang"]]],["Mau ngapain?",[["Adora(abel)","Gak tau"],["Adora(abel)","Kayaknya penting deh, Sa"]]]]},
+     {o:[["Iya, Sayangku.",[["Adora(abel)","Sayang kamu ❤️"]]],["I love you ❤️",[["Adora(abel)","Love you too"]]]]}],
   cl:[[1,"them","Halo, lagi di mana?"],[4,"me","Lagi di kampus, Ma."],[8,"them","Pulang jangan malam-malam ya."],[12,"me","Siap, Ma."]]},
  {n:"Rani",p:"foto/rani.jpg",c:"#30d158",w:"Kemarin",m:[],
   t:[{o:[["Udah, tadi macet",[["Rani","Haha sama, aku juga telat"]]],["Belum, bentar lagi",[["Rani","Yaudah hati-hati ya"]]]]}],
@@ -185,8 +185,8 @@ function listApp(title,head,rows,o){
 }
 
 /* ===== PENGATURAN: ubah di sini ===== */
-var PIN="1234";
-var IG={u:"username_kamu",n:"Nama Kamu",bio:"Bio singkat kamu ✨",p:"foto/profil.jpg",fl:"1.234",fg:"321"};
+var PIN="0110";
+var IG={u:"mni_isaacketan",n:"Isaac Kael Tan",bio:"Abel's",p:"foto/profil.jpg",fl:"1.234",fg:"321"};
 /* sorotan: n = nama, song = file lagu (boleh ""), items = foto, caps = teks tiap foto (opsional) */
 var HL=[{n:"Liburan",song:"audio/lagu1.mp3",items:["foto/h1.jpg","foto/h2.jpg","foto/h3.jpg"],caps:["Hari pertama","Sunset","Pulang"]},
  {n:"Teman",song:"audio/lagu2.mp3",items:["foto/h4.jpg","foto/h5.jpg"],caps:["Kumpul","Ketawa terus"]},
